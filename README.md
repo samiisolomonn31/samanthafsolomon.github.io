@@ -27,11 +27,11 @@
     --star:     #f1c40f;
     --shadow:   #2c1a0e;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'VT323', monospace;
     background: var(--sky);
@@ -40,13 +40,13 @@
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='6' y='0' width='4' height='16' fill='%235c3d1e'/%3E%3Crect x='0' y='6' width='16' height='4' fill='%235c3d1e'/%3E%3C/svg%3E") 8 8, crosshair;
     overflow-x: hidden;
   }
-
+ 
   /* ── ANIMATED SKY BG ── */
   .sky-bg {
     position: fixed; inset: 0; z-index: 0;
     background: linear-gradient(180deg, #87ceeb 0%, #b0e0f5 50%, #7ec8e3 100%);
   }
-
+ 
   /* Pixel clouds */
   .cloud {
     position: fixed; z-index: 0;
@@ -66,7 +66,7 @@
   .cloud:nth-child(2) { top: 15%; animation-duration: 55s; animation-delay: -20s; width: 80px; }
   .cloud:nth-child(3) { top: 5%;  animation-duration: 35s; animation-delay: -10s; width: 48px; }
   @keyframes drift { from { left: -100px; } to { left: 110%; } }
-
+ 
   /* Pixel grass ground */
   .ground {
     position: fixed; bottom: 0; left: 0; right: 0; height: 48px; z-index: 1;
@@ -78,14 +78,14 @@
     position: absolute; top: -16px; left: 0; right: 0; height: 8px;
     background: repeating-linear-gradient(90deg, var(--grass2) 0 8px, var(--grass) 8px 16px);
   }
-
+ 
   /* ── LAYOUT ── */
   .page {
     position: relative; z-index: 2;
     max-width: 900px; margin: 0 auto;
     padding: 2rem 1.5rem 6rem;
   }
-
+ 
   /* ── NAMEPLATE / HEADER ── */
   .nameplate {
     background: var(--panel);
@@ -101,11 +101,11 @@
     from { opacity:0; transform: scale(0.85) translateY(20px); }
     to   { opacity:1; transform: scale(1) translateY(0); }
   }
-
+ 
   .nameplate-inner {
     display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;
   }
-
+ 
   /* Pixel character sprite */
   .sprite {
     width: 64px; height: 80px; flex-shrink: 0;
@@ -113,9 +113,9 @@
     position: relative;
   }
   .sprite canvas { image-rendering: pixelated; }
-
+ 
   .name-block { flex: 1; min-width: 200px; }
-
+ 
   .name-block h1 {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(0.9rem, 2.5vw, 1.4rem);
@@ -124,13 +124,13 @@
     line-height: 1.4;
     margin-bottom: 0.4rem;
   }
-
+ 
   .job-title {
     font-size: 1.4rem;
     color: var(--green);
     margin-bottom: 0.6rem;
   }
-
+ 
   .contact-row {
     display: flex; flex-wrap: wrap; gap: 0.5rem;
     font-size: 1.1rem; color: var(--wood);
@@ -138,7 +138,7 @@
   .contact-row a { color: var(--blue); text-decoration: none; }
   .contact-row a:hover { color: var(--red); }
   .contact-row span { color: var(--border); }
-
+ 
   /* Hearts / stars row */
   .stars-row { display: flex; gap: 4px; margin-top: 0.5rem; }
   .star { font-size: 1.2rem; color: var(--star); animation: twinkle 2s infinite; }
@@ -147,7 +147,7 @@
   .star:nth-child(4) { animation-delay: 0.9s; }
   .star:nth-child(5) { animation-delay: 1.2s; }
   @keyframes twinkle { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
-
+ 
   /* ── SECTION PANEL ── */
   .panel {
     background: var(--panel);
@@ -156,7 +156,7 @@
     margin-bottom: 1.5rem;
     animation: popIn 0.5s cubic-bezier(.36,1.56,.64,1) both;
   }
-
+ 
   .panel-header {
     background: var(--wood);
     padding: 0.6rem 1rem;
@@ -166,7 +166,7 @@
     transition: background 0.15s;
   }
   .panel-header:hover { background: var(--wood2); }
-
+ 
   .panel-header h2 {
     font-family: 'Press Start 2P', monospace;
     font-size: 0.7rem;
@@ -174,9 +174,9 @@
     text-shadow: 1px 1px 0 var(--shadow);
     flex: 1;
   }
-
+ 
   .panel-icon { font-size: 1.4rem; }
-
+ 
   .toggle-btn {
     font-family: 'Press Start 2P', monospace;
     font-size: 0.6rem;
@@ -185,14 +185,14 @@
     transition: transform 0.3s;
   }
   .toggle-btn.open { transform: rotate(180deg); }
-
+ 
   .panel-body {
     padding: 1.2rem 1.5rem;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
   }
   .panel-body.collapsed { max-height: 0 !important; padding-top: 0; padding-bottom: 0; }
-
+ 
   /* ── SUMMARY ── */
   .summary-text {
     font-size: 1.35rem; line-height: 1.7;
@@ -207,7 +207,7 @@
     position: absolute; top: -14px; left: 12px;
     font-size: 1.4rem;
   }
-
+ 
   /* ── EXPERIENCE ── */
   .job-card {
     border: 3px solid var(--border);
@@ -221,7 +221,7 @@
     transform: translate(-2px, -2px);
   }
   .job-card:last-child { margin-bottom: 0; }
-
+ 
   .job-header {
     background: var(--dirt);
     padding: 0.5rem 0.8rem;
@@ -239,23 +239,23 @@
   .job-date {
     font-size: 1rem; color: var(--wood);
   }
-
+ 
   .job-body { padding: 0.8rem; overflow: hidden; transition: max-height 0.3s ease; }
   .job-body.collapsed { max-height: 0 !important; padding: 0; }
-
+ 
   .job-bullet {
     display: flex; gap: 0.5rem; align-items: flex-start;
     font-size: 1.15rem; line-height: 1.5;
     margin-bottom: 0.4rem; color: var(--text);
   }
   .job-bullet::before { content: '▸'; color: var(--green); flex-shrink: 0; margin-top: 1px; }
-
+ 
   /* ── SKILLS ── */
   .skills-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 0.8rem;
   }
-
+ 
   .skill-item {
     background: var(--panel2);
     border: 2px solid var(--border);
@@ -270,10 +270,10 @@
     box-shadow: 3px 3px 0 var(--gold2);
   }
   .skill-item::before { content: '⚒️'; font-size: 1rem; flex-shrink: 0; }
-
+ 
   /* ── CERTS ── */
   .cert-list { display: flex; flex-direction: column; gap: 0.6rem; }
-
+ 
   .cert-item {
     background: var(--panel2);
     border: 2px solid var(--border);
@@ -299,7 +299,7 @@
     padding: 2px 6px;
     border: 1px solid var(--border);
   }
-
+ 
   /* ── EDUCATION ── */
   .edu-card {
     background: var(--panel2);
@@ -316,10 +316,10 @@
   }
   .edu-degree { color: var(--green); }
   .edu-years  { color: var(--wood);  font-size: 1rem; }
-
+ 
   /* ── PIXEL ART CHARACTER (canvas) ── */
   #playerCanvas { display: block; }
-
+ 
   /* ── NOTIFICATION TOAST ── */
   #toast {
     position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
@@ -333,7 +333,7 @@
     white-space: nowrap;
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-
+ 
   /* ── XP BAR ── */
   .xp-bar-wrap {
     margin-top: 0.7rem;
@@ -353,7 +353,7 @@
     font-family: 'Press Start 2P', monospace; font-size: 0.45rem;
     color: var(--wood2); margin-top: 2px;
   }
-
+ 
   /* ── FLOATING ITEMS ── */
   .float-item {
     position: fixed; z-index: 10;
@@ -365,14 +365,14 @@
     0%   { opacity: 1; transform: translateY(0); }
     100% { opacity: 0; transform: translateY(-80px); }
   }
-
+ 
   /* ── PIXEL DIVIDER ── */
   .px-divider {
     height: 8px; margin: 0.2rem 0;
     background: repeating-linear-gradient(90deg, var(--border) 0 4px, transparent 4px 8px);
     opacity: 0.3;
   }
-
+ 
   /* ── SCROLL TOP BTN ── */
   #scrollTop {
     position: fixed; bottom: 70px; right: 20px; z-index: 50;
@@ -385,19 +385,19 @@
   }
   #scrollTop:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--shadow); }
   #scrollTop.visible { display: block; }
-
+ 
   /* delay helpers */
   .delay-1 { animation-delay: 0.1s; }
   .delay-2 { animation-delay: 0.2s; }
   .delay-3 { animation-delay: 0.3s; }
   .delay-4 { animation-delay: 0.4s; }
   .delay-5 { animation-delay: 0.5s; }
-
+ 
   @media (max-width: 500px) {
     .nameplate-inner { flex-direction: column; }
     .page { padding: 1rem 0.75rem 6rem; }
   }
-
+ 
   /* ── INTRO SCREEN ── */
   #intro {
     position: fixed; inset: 0; z-index: 1000;
@@ -412,7 +412,7 @@
     opacity: 0 !important;
     pointer-events: none;
   }
-
+ 
   .intro-title {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(1rem, 4vw, 1.8rem);
@@ -426,7 +426,7 @@
     from { text-shadow: 0 0 10px var(--gold2), 3px 3px 0 var(--shadow); }
     to   { text-shadow: 0 0 30px var(--gold), 0 0 60px var(--gold2), 3px 3px 0 var(--shadow); }
   }
-
+ 
   .intro-sub {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(0.5rem, 2vw, 0.75rem);
@@ -434,7 +434,7 @@
     text-align: center;
     line-height: 2;
   }
-
+ 
   .press-start-btn {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(0.6rem, 2vw, 0.9rem);
@@ -457,7 +457,7 @@
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0 var(--shadow);
   }
-
+ 
   /* Pixel scene inside intro */
   .intro-scene {
     display: flex; gap: 1rem; align-items: flex-end;
@@ -470,7 +470,7 @@
     0%,100% { transform: rotate(-3deg); }
     50%      { transform: rotate(3deg); }
   }
-
+ 
   .intro-copyright {
     font-family: 'Press Start 2P', monospace;
     font-size: 0.45rem;
@@ -479,7 +479,7 @@
     position: absolute;
     bottom: 1.5rem;
   }
-
+ 
   /* Stars in intro bg */
   .intro-stars {
     position: absolute; inset: 0; pointer-events: none; overflow: hidden;
@@ -493,45 +493,45 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- ══════ INTRO / PRESS START SCREEN ══════ -->
 <div id="intro">
   <div class="intro-stars" id="introStars"></div>
-
+ 
   <div class="intro-scene">
     <span class="intro-tree">🌲</span>
     <span class="intro-tree">🌳</span>
     <span class="intro-tree">🌲</span>
   </div>
-
+ 
   <div class="intro-title">SAMANTHA<br/>SOLOMON</div>
   <div class="intro-sub">
     ⚔ Campaign Manager ⚔<br/>
     <span style="color:var(--dirt); font-size:0.7em;">★ Dallas, TX · Class of 2023 ★</span>
   </div>
-
-  <button class="press-start-btn" id="startBtn" onclick="startGame()">
+ 
+  <button class="press-start-btn" id="startBtn">
     ▶ PRESS START
   </button>
-
+ 
   <div class="intro-copyright">© 2026 SAMANTHA SOLOMON · ALL QUESTS RESERVED</div>
 </div>
-
+ 
 <!-- SKY + ENVIRONMENT -->
 <div class="sky-bg"></div>
 <div class="cloud"></div>
 <div class="cloud"></div>
 <div class="cloud"></div>
 <div class="ground"></div>
-
+ 
 <!-- TOAST -->
 <div id="toast">✨ New achievement unlocked!</div>
-
+ 
 <!-- SCROLL TOP -->
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲ TOP</button>
-
+ 
 <div class="page">
-
+ 
   <!-- ══════ NAMEPLATE ══════ -->
   <div class="nameplate">
     <div class="nameplate-inner">
@@ -559,7 +559,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════ SUMMARY ══════ -->
   <div class="panel delay-1">
     <div class="panel-header" onclick="togglePanel(this)">
@@ -573,7 +573,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════ EXPERIENCE ══════ -->
   <div class="panel delay-2">
     <div class="panel-header" onclick="togglePanel(this)">
@@ -582,7 +582,7 @@
       <button class="toggle-btn open">▼</button>
     </div>
     <div class="panel-body" style="max-height:2000px">
-
+ 
       <!-- Job 1 -->
       <div class="job-card" onclick="toggleJob(this)">
         <div class="job-header">
@@ -604,7 +604,7 @@
           <div class="job-bullet">Pivot as needed for ad-hoc data, campaign planning, and execution requests</div>
         </div>
       </div>
-
+ 
       <!-- Job 2 -->
       <div class="job-card" onclick="toggleJob(this)">
         <div class="job-header">
@@ -625,7 +625,7 @@
           <div class="job-bullet">Conducted research for strategic insight, achieving above-target outcomes through cross-functional communication</div>
         </div>
       </div>
-
+ 
       <!-- Job 3 -->
       <div class="job-card" onclick="toggleJob(this)">
         <div class="job-header">
@@ -645,10 +645,10 @@
           <div class="job-bullet">Ongoing data analysis of business operations; made data-driven decisions to drive multiple campaigns simultaneously</div>
         </div>
       </div>
-
+ 
     </div>
   </div>
-
+ 
   <!-- ══════ SKILLS ══════ -->
   <div class="panel delay-3">
     <div class="panel-header" onclick="togglePanel(this)">
@@ -673,7 +673,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════ CERTIFICATIONS ══════ -->
   <div class="panel delay-4">
     <div class="panel-header" onclick="togglePanel(this)">
@@ -702,7 +702,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════ EDUCATION ══════ -->
   <div class="panel delay-5">
     <div class="panel-header" onclick="togglePanel(this)">
@@ -722,10 +722,35 @@
       </div>
     </div>
   </div>
-
+ 
 </div><!-- /page -->
-
+ 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── PRESS START — runs immediately, no dependencies ──
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('startBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var intro = document.getElementById('intro');
+        intro.style.transition = 'opacity 0.8s ease';
+        intro.style.opacity = '0';
+        intro.style.pointerEvents = 'none';
+        setTimeout(function() {
+          intro.style.display = 'none';
+        }, 850);
+      });
+    }
+    document.addEventListener('keydown', function(e) {
+      var intro = document.getElementById('intro');
+      if (intro && intro.style.display !== 'none' && (e.key === 'Enter' || e.key === ' ')) {
+        intro.style.transition = 'opacity 0.8s ease';
+        intro.style.opacity = '0';
+        intro.style.pointerEvents = 'none';
+        setTimeout(function() { intro.style.display = 'none'; }, 850);
+      }
+    });
+  });
+ 
   // ── INTRO STARS ──
   const starsContainer = document.getElementById('introStars');
   for (let i = 0; i < 40; i++) {
@@ -737,7 +762,7 @@
     s.style.opacity = Math.random() * 0.8 + 0.2;
     starsContainer.appendChild(s);
   }
-
+ 
   // ── START GAME ──
   function startGame() {
     const intro = document.getElementById('intro');
@@ -757,7 +782,7 @@
         osc.stop(ctx.currentTime + i * 0.12 + 0.2);
       });
     } catch(e) {}
-
+ 
     // Force fade using inline styles — guaranteed to work
     intro.style.transition = 'opacity 0.8s ease';
     intro.style.opacity = '0';
@@ -765,7 +790,7 @@
     setTimeout(() => { intro.style.display = 'none'; }, 850);
     setTimeout(() => showToast('👋 Welcome to Samantha\'s farm! Click anything!'), 1000);
   }
-
+ 
   // Also allow Enter / Space to start
   document.addEventListener('keydown', e => {
     const intro = document.getElementById('intro');
@@ -773,7 +798,7 @@
       if (e.key === 'Enter' || e.key === ' ') startGame();
     }
   });
-
+ 
   // ── PANEL TOGGLE ──
   function togglePanel(header) {
     const body = header.nextElementSibling;
@@ -781,14 +806,14 @@
     body.classList.toggle('collapsed');
     btn.classList.toggle('open');
   }
-
+ 
   // ── JOB TOGGLE ──
   function toggleJob(card) {
     const body = card.querySelector('.job-body');
     body.classList.toggle('collapsed');
     showToast(body.classList.contains('collapsed') ? '📜 Quest details hidden' : '📜 Quest details revealed!');
   }
-
+ 
   // ── TOAST ──
   let toastTimer;
   function showToast(msg) {
@@ -798,7 +823,7 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
   }
-
+ 
   // ── FLOATING ITEM ON CLICK ──
   function spawnItem(el, emoji) {
     const rect = el.getBoundingClientRect();
@@ -811,24 +836,24 @@
     setTimeout(() => div.remove(), 3100);
     showToast('✨ Skill activated!');
   }
-
+ 
   // ── SCROLL TOP ──
   window.addEventListener('scroll', () => {
     document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
   });
-
+ 
   // ── PIXEL CHARACTER CANVAS ──
   const c = document.getElementById('playerCanvas');
   const ctx = c.getContext('2d');
   ctx.imageSmoothingEnabled = false;
-
+ 
   // Simple pixel-art character (each cell = 4px)
   const S = 4;
   function px(x, y, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x * S, y * S, S, S);
   }
-
+ 
   function drawCharacter(frame) {
     ctx.clearRect(0, 0, 64, 80);
     // Hair
@@ -854,11 +879,11 @@
     px(8, 7, '#f0c040'); px(9, 7, '#f0c040'); px(8, 8, '#f0c040'); px(9, 8, '#f0c040');
     px(8, 6, '#d4a017'); px(9, 6, '#d4a017');
   }
-
+ 
   let frame = 0;
   setInterval(() => { frame = 1 - frame; drawCharacter(frame); }, 700);
   drawCharacter(0);
-
+ 
   // ── EASTER EGG: Konami code ──
   let keys = [];
   const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
