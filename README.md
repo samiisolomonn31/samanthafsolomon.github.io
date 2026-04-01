@@ -19,7 +19,7 @@
   /* ══ INTRO SCREEN ══ */
   #intro{
     position:fixed;inset:0;z-index:9999;
-    background:#1a0e05;
+    background:#191970;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;
   }
   .intro-stars{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
@@ -160,7 +160,7 @@
   <div class="intro-title">SAMANTHA<br/>SOLOMON</div>
   <div class="intro-sub">
     ⚔ Campaign Manager ⚔<br/>
-    <span style="color:#c8956b;">★ Dallas, TX · Looking to Level Up ★</span>
+    <span style="color:FFFFFF;">★ Dallas, TX · Looking to Level Up ★</span>
   </div>
   <button id="startBtn">▶ PRESS START</button>
   <div class="intro-copy">© 2026 SAMANTHA SOLOMON · ALL QUESTS RESERVED</div>
