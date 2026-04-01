@@ -108,7 +108,7 @@
   .job-card:last-child{margin-bottom:0;}
   .job-header{background:var(--dirt);padding:.5rem .8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.3rem;border-bottom:2px solid var(--border);}
   .job-title-text{font-family:'Press Start 2P',monospace;font-size:.55rem;color:var(--wood2);}
-  .job-company{font-family:'Press Start 2P',monospace;font-size:1.1rem;color:var(--green);font-weight:bold;}
+  .job-company{font-family:'Press Start 2P',monospace;font-size:1rem;color:var(--green);font-weight:bold;}
   .job-date{font-family:'Press Start 2P',monospace;font-size:.55rem;color:var(--wood);}
   .job-body{font-family:'Press Start 2P',monospace; padding:.8rem;overflow:hidden;transition:max-height .3s ease;}
   .job-body.collapsed{max-height:0!important;padding:0;}
