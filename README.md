@@ -42,7 +42,7 @@
   }
   .intro-sub{
     font-family:'Press Start 2P',monospace;
-    font-size:clamp(0.45rem,1.5vw,0.7rem);color:#5a9e3a;
+    font-size:clamp(0.45rem,1.5vw,0.7rem);color:var(--gold);
     text-align:center;line-height:2.2;
   }
   #startBtn{
