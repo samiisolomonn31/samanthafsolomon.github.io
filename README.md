@@ -4,7 +4,7 @@
   <title>Blue Background</title>
   <style>
     body {
-      background-color: #1a3a8a;
+      background-color: white;
     }
   </style>
 </head>
