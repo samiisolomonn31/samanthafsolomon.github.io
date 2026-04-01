@@ -100,7 +100,7 @@
   .panel-body{padding:1.2rem 1.5rem;overflow:hidden;transition:max-height .4s ease,padding .3s ease;}
   .panel-body.collapsed{max-height:0!important;padding-top:0;padding-bottom:0;}
 
-  .summary-text{font-family:'Press Start 2P',monospace;font-size:1rem;line-height:1.7;background:var(--panel2);border:2px solid var(--border);padding:1rem;position:relative;}
+  .summary-text{font-family:'Press Start 2P',monospace;font-size:.6rem;line-height:1.7;background:var(--panel2);border:2px solid var(--border);padding:1rem;position:relative;}
   .summary-text::before{content:'💬';position:absolute;top:-14px;left:12px;font-size:1.4rem;}
 
   .job-card{border:3px solid var(--border);background:var(--panel2);margin-bottom:1rem;cursor:pointer;transition:box-shadow .2s,transform .2s;}
