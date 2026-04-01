@@ -389,7 +389,7 @@ function initResume() {
 
   // Konami easter egg
   var keys=[];
-  var konami='ArrowUp,ArrowUp,ArrowDown,ArrowDown,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a'.split(',');
+  var konami='s,a,m,i'.split(',');
   document.addEventListener('keydown',function(e){
     keys.push(e.key); keys=keys.slice(-10);
     if(keys.join(',')===konami.join(',')){
