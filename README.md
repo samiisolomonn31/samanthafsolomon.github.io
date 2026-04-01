@@ -80,7 +80,7 @@
   .name-block{flex:1;min-width:200px;}
   .name-block h1{font-family:'Press Start 2P',monospace;font-size:clamp(.9rem,2.5vw,1.4rem);color:var(--wood2);text-shadow:2px 2px 0 var(--gold2);line-height:1.4;margin-bottom:.4rem;}
   .job-title-h{font-family:'Press Start 2P',monospace;font-size:1.4rem;color:var(--green);margin-bottom:.6rem;}
-  .contact-row{display:flex;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;color:var(--wood);}
+  .contact-row{display:flex;flex-wrap:wrap;gap:.5rem;font-family:'Press Start 2P',monospace; font-size:1.1rem;color:var(--wood);}
   .contact-row a{color:var(--blue);text-decoration:none;}
   .contact-row a:hover{color:var(--red);}
   .stars-row{display:flex;gap:4px;margin-top:.5rem;}
