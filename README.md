@@ -112,7 +112,7 @@
   .job-date{font-family:'Press Start 2P',monospace;font-size:1rem;color:var(--wood);}
   .job-body{font-family:'Press Start 2P',monospace; padding:.8rem;overflow:hidden;transition:max-height .3s ease;}
   .job-body.collapsed{max-height:0!important;padding:0;}
-  .job-bullet{display:flex;gap:.5rem;align-items:flex-start;font-size:1.15rem;line-height:1.5;margin-bottom:.4rem;}
+  .job-bullet{display:flex;gap:.5rem;align-items:flex-start;font-size:.6rem;line-height:1.5;margin-bottom:.4rem;}
   .job-bullet::before{content:'▸';color:var(--green);flex-shrink:0;margin-top:1px;}
 
   .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;}
