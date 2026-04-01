@@ -83,7 +83,7 @@
   .contact-row{display:flex;flex-wrap:wrap;gap:.5rem;font-family:'Press Start 2P',monospace; font-size:.7rem;color:var(--wood);}
   .contact-row a{color:var(--blue);text-decoration:none;}
   .contact-row a:hover{color:var(--red);}
-  .stars-row{font-family:'Press Start 2P',monospace;font-size:1rem; display:flex;gap:4px;margin-top:.5rem;}
+  .stars-row{font-family:'Press Start 2P',monospace;font-size:1.5rem; display:flex;gap:4px;margin-top:.5rem;}
   .star{font-size 1rem;color:var(--star);animation:twinkle 2s infinite;}
   .star:nth-child(2){animation-delay:.3s;}.star:nth-child(3){animation-delay:.6s;}.star:nth-child(4){animation-delay:.9s;}.star:nth-child(5){animation-delay:1.2s;}
   .xp-label{font-family:'Press Start 2P',monospace;font-size:.45rem;color:var(--wood2);margin-top:2px;}
@@ -189,7 +189,7 @@
           </div>
           <div class="stars-row">
             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            <span style="font-size:.6rem;color:var(--wood);margin-left:6px;">Friendship Level MAX</span>
+            <span style="font-size:.5rem;color:var(--wood);margin-left:6px;">Friendship Level MAX</span>
           </div>
           <div class="xp-label">Campaign XP ████████████ LVL 99</div>
           <div class="xp-bar-wrap"><div class="xp-bar-fill"></div></div>
