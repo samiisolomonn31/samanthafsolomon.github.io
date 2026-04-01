@@ -79,8 +79,8 @@
   .sprite{width:64px;height:80px;flex-shrink:0;}
   .name-block{flex:1;min-width:200px;}
   .name-block h1{font-family:'Press Start 2P',monospace;font-size:clamp(.9rem,2.5vw,1.4rem);color:var(--wood2);text-shadow:2px 2px 0 var(--gold2);line-height:1.4;margin-bottom:.4rem;}
-  .job-title-h{font-family:'Press Start 2P',monospace;font-size:1.4rem;color:var(--green);margin-bottom:.6rem;}
-  .contact-row{display:flex;flex-wrap:wrap;gap:.5rem;font-family:'Press Start 2P',monospace; font-size:1.1rem;color:var(--wood);}
+  .job-title-h{font-family:'Press Start 2P',monospace;font-size:1rem;color:var(--green);margin-bottom:.6rem;}
+  .contact-row{display:flex;flex-wrap:wrap;gap:.5rem;font-family:'Press Start 2P',monospace; font-size:.7rem;color:var(--wood);}
   .contact-row a{color:var(--blue);text-decoration:none;}
   .contact-row a:hover{color:var(--red);}
   .stars-row{display:flex;gap:4px;margin-top:.5rem;}
@@ -100,7 +100,7 @@
   .panel-body{padding:1.2rem 1.5rem;overflow:hidden;transition:max-height .4s ease,padding .3s ease;}
   .panel-body.collapsed{max-height:0!important;padding-top:0;padding-bottom:0;}
 
-  .summary-text{font-size:1.35rem;line-height:1.7;background:var(--panel2);border:2px solid var(--border);padding:1rem;position:relative;}
+  .summary-text{font-family:'Press Start 2P',monospace;font-size:1rem;line-height:1.7;background:var(--panel2);border:2px solid var(--border);padding:1rem;position:relative;}
   .summary-text::before{content:'💬';position:absolute;top:-14px;left:12px;font-size:1.4rem;}
 
   .job-card{border:3px solid var(--border);background:var(--panel2);margin-bottom:1rem;cursor:pointer;transition:box-shadow .2s,transform .2s;}
