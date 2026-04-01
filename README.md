@@ -129,8 +129,8 @@
   .edu-card{background:var(--panel2);border:2px solid var(--border);padding:1rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;font-size:1.2rem;}
   .edu-icon{font-size:2.5rem;}
   .edu-name{font-family:'Press Start 2P',monospace;font-size:.6rem;color:var(--wood2);margin-bottom:.3rem;}
-  .edu-degree{color:var(--green);}
-  .edu-years{color:var(--wood);font-size:1rem;}
+  .edu-degree{font-family:'Press Start 2P',monospace;font-size:.8rem;color:var(--green);}
+  .edu-years{font-family:'Press Start 2P',monospace;color:var(--wood);font-size:.6rem;}
 
   #toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel);border:3px solid var(--border);box-shadow:4px 4px 0 var(--shadow);padding:.6rem 1.2rem;font-family:'Press Start 2P',monospace;font-size:.55rem;color:var(--text);z-index:9998;pointer-events:none;opacity:0;transition:opacity .3s,transform .3s;white-space:nowrap;}
   #toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
@@ -231,7 +231,7 @@
 
         <div class="job-card" onclick="toggleJob(this)">
           <div class="job-header">
-            <div><div class="job-title-text">CAMPAIGN MGR — PRODUCTION &amp; EXECUTION</div><div class="job-company">🌾 Mesmerize</div></div>
+            <div><div class="job-title-text">Mesmerize</div><div class="job-company">🌾 CAMPAIGN MGR — PRODUCTION &amp; EXECUTION</div></div>
             <div><div class="job-date">📅 Jan 2024 – Oct 2024</div><div style="font-size:.85rem;color:var(--gold2);text-align:right;">✔ Completed</div></div>
           </div>
           <div class="job-body" style="max-height:600px">
@@ -245,7 +245,7 @@
 
         <div class="job-card" onclick="toggleJob(this)">
           <div class="job-header">
-            <div><div class="job-title-text">CAMPAIGN MGR — CSR OPERATIONS</div><div class="job-company">🌾 Mesmerize</div></div>
+            <div><div class="job-title-text">Mesmerize</div><div class="job-company">🌾 CAMPAIGN MGR — CSR OPERATIONS</div></div>
             <div><div class="job-date">📅 Apr 2023 – Jan 2024</div><div style="font-size:.85rem;color:var(--gold2);text-align:right;">✔ Completed</div></div>
           </div>
           <div class="job-body" style="max-height:600px">
