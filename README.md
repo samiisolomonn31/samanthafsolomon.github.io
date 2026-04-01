@@ -308,7 +308,7 @@
           <div>
             <div class="edu-name">UNIVERSITY OF DENVER</div>
             <div class="edu-degree">Bachelor's Degree — Strategic Communications</div>
-            <div class="edu.minors">Minors: Marketing &amp; Business Analytics</div>
+            <div class="edu-minors">Minors: Marketing &amp; Business Analytics</div>
             <div class="edu-years">📅 2018 – 2023</div>
           </div>
         </div>
